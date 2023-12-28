@@ -81,6 +81,7 @@ p {
 a {
     text-decoration: none;
     color: #ff9000;
+    cursor: url(file/customcursor_cross.png),auto;
 }
 
 .line-up {
@@ -318,4 +319,8 @@ footer {
     body {
         display: none;
     }
+}
+
+html {
+    cursor: url(file/customcursor.png),auto;
 }

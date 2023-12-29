@@ -85,6 +85,10 @@ a {
     cursor: url(file/customcursor_cross.png),auto;
 }
 
+.title a {
+    color: #ffffff;
+}
+
 .line-up {
     display: flex;
     height: 100%;

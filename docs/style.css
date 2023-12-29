@@ -74,6 +74,7 @@ body {
 
 h1,
 h2,
+h3,
 p {
     margin: 0;
 }
@@ -247,7 +248,7 @@ footer {
 
 .home-contents {
     max-width: 1200px;
-    min-height: 75vh;
+    min-height: 78vh;
     background-color: #ffffff;
     padding: 15px;
     margin: 0 auto;
@@ -260,13 +261,19 @@ footer {
     border-bottom: 2px solid #ff9000;
 }
 
+.home-contents h2 {
+    color: #ff9000;
+    display: inline-block;
+    border-bottom: 2px solid #ff9000;
+}
+
 .home-contents p {
     color: #000000;
 }
 
 .contents {
     max-width: 1200px;
-    min-height: 76.6vh;
+    min-height: 78vh;
     background-color: #ffffff;
     padding: 15px;
     margin: 0 auto;
@@ -275,6 +282,12 @@ footer {
 }
 
 .contents h2 {
+    color: #ff9000;
+    display: inline-block;
+    border-bottom: 2px solid #ff9000;
+}
+
+.contents h3 {
     color: #ff9000;
     display: inline-block;
     border-bottom: 2px solid #ff9000;

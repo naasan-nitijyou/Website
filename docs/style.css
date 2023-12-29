@@ -179,7 +179,7 @@ header {
     left: 100%;
     /* メニューを画面の外に飛ばす */
     z-index: 99;
-    background: #000000;
+    background: #ffffff;
     transition: .5s;
 }
 
@@ -262,6 +262,12 @@ footer {
 }
 
 .home-contents h2 {
+    color: #ff9000;
+    display: inline-block;
+    border-bottom: 2px solid #ff9000;
+}
+
+.home-contents h3 {
     color: #ff9000;
     display: inline-block;
     border-bottom: 2px solid #ff9000;

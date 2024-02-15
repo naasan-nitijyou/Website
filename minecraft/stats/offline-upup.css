@@ -1,0 +1,56 @@
+body{
+    margin: 0px;
+    background-image: url(stats-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: MyFont;
+    background-color: #5d7ba6;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(LINESeedJP_A_TTF_Th.ttf);
+}
+h1,h2,h3,p,a{
+    margin: 0px;
+}
+.line-up{
+    display: flex;
+}
+.contents{
+    width: 90vw;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: calc(100vh - 60px);
+}
+.line{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    font-size: 2vw;
+}
+.panel{
+    margin: 10px;
+    padding: 15px;
+    padding-bottom: 5%;
+    text-align: center;
+    background-color: #0000004f;
+    border-radius: 20px;
+}
+footer{
+    height: 60px;
+    display: block;
+}
+footer h3{
+    text-align: right;
+    margin-right: 25px;
+}
+
+.logo{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}

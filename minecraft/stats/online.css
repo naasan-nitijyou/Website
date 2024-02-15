@@ -1,0 +1,58 @@
+.wrapperon{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+
+.wrapperon.hide{
+    animation: hide_toast 1s ease forwards;
+}
+@keyframes hide_toast{
+    0%{
+        transform: translateX(20px);
+    }
+    40%{
+        transform: translateX(10%);
+    }
+    80%, 100%{
+        opacity: 0;
+        pointer-events: none;
+        transform: translateX(-100%);
+    }
+}
+.wrapperon .toaston{
+    background: #fff;
+    padding: 20px 15px 20px 20px;
+    border-radius: 10px;
+    border-left: 5px solid #2ecc71;
+    box-shadow: 1px 7px 14px -5px rgba(0, 0, 0, 0.15);
+    width: 430px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.toaston .contenton{
+    display: flex;
+    align-items: center;
+}
+.contenton .iconon{
+    font-size: 25px;
+    color: #fff;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    background: #2ecc71;
+}
+.contenton .detailson{
+    margin-left: 15px;
+}
+.detailson span{
+    color: #878787;
+    font-size: 20px;
+    font-weight: 500;
+}
+.detailson p{
+    color: #878787;
+}

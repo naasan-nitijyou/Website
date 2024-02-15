@@ -1,0 +1,84 @@
+body{
+    margin: 0px;
+    background-image: url(stats-background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: MyFont;
+    background-color: #5d7ba6;
+    color: #ffffff;
+}
+
+@font-face {
+    font-family: 'MyFont';
+    src: url(LINESeedJP_A_TTF_Th.ttf);
+}
+h1,h2,h3,p,a{
+    margin: 0px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff91;
+}
+.line-up{
+    display: flex;
+}
+.contents{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    min-height: calc(100vh - 70px);
+}
+.line{
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+.panel{
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff11;
+    border-radius: 20px;
+}
+.card{
+    padding: 15px;
+    width: 100%;
+    margin: 3px;
+    background-color: #ffffff11;
+    border-radius: 20px;
+}
+.profile{
+    background-color: #ffffff11;
+    border-radius: 20px;
+    padding: 15px;
+    padding-bottom: 12px;
+}
+.profile img{
+    height: 30px;
+}
+.profile .line-up{
+    margin-bottom: 3px;
+}
+.profile h3{
+    margin-left: 10px;
+}
+footer{
+    height: 60px;
+    display: block;
+}
+footer h3{
+    text-align: right;
+    margin-right: 25px;
+}
+
+.logo {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.logo-area{
+    justify-content: center; /* 左右中央に配置 */
+}

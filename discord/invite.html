@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="invite.css">
+    <title>Discord</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="card">
+            <img class="logo" src="./discordlogo.svg" alt="">
+            <img class="icon" src="./icon.jpg" alt="">
+            <p>なーさん に招待されています
+            <p>
+            <h1 id="ServerName">Loading...</h1>
+            <div class="stats" id="stats">Loading...</div>
+            <button class="invite" id="invite">招待を受ける</button>
+        </div>
+    </div>
+    <script>
+        // JSONデータを取得し、HTMLに表示する関数
+        function displayData() {
+            fetch('https://discord.com/api/guilds/1128371783515525230/widget.json')
+                .then(response => response.json())
+                .then(data => {
+                    // JSONから取得したデータをHTMLに表示
+                    document.getElementById('ServerName').textContent = data.name;
+
+                    // presence_countの値を使ってオンラインの人数を表示する
+                    const statsElement = document.getElementById('stats');
+                    statsElement.innerHTML = `<p><span class="online">⚫︎</span>${data.presence_count}人がオンライン</p>`;
+
+                    // ボタンをクリックしたらリダイレクトするイベントリスナーを追加
+                    document.getElementById('invite').addEventListener('click', function () {
+                        window.location.href = data.instant_invite;
+                    });
+                })
+                .catch(error => console.error('データを取得できませんでした。', error));
+        }
+
+        // ページが読み込まれたらJSONデータを取得して表示する
+        document.addEventListener('DOMContentLoaded', displayData);
+    </script>
+</body>
+
+</html>

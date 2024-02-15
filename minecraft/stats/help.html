@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="refresh" content="60;URL=./">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Naamc.net - stats" />
+    <meta property="og:description" content="なーさんの日常 サーバーステータス" />
+    <meta property="og:url" content="https://naamc.net/minecraft/stats" />
+    <meta property="og:site_name" content="naamc.net" />
+    <meta property="og:image" content="https://naamc.net/minecraft/stats/OGP.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@naamc0325" />
+    <meta name="twitter:title" content="Naamc.net - stats" />
+    <meta name="twitter:description" content="なーさんの日常 マインクラフトサーバーステータス" />
+    <meta name="twitter:image" content="https://naamc.net/minecraft/stats/OGP.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="help.css">
+    <link rel="stylesheet" href="offline.css">
+    <link rel="stylesheet" href="online.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <script src="about.js"></script>
+    <script src="playerlist.js"></script>
+    <script src="netwark.js"></script>
+    <script src="upup.min.js"></script>
+    <script>
+        UpUp.start({
+            'content-url': 'offline-upup.html',
+            'assets': [
+                'offline-upup.css',
+                'なーさんの日常サーバーステータスロゴ.png',
+                'stats-background.png',
+                'offline.css',
+                'LINESeedJP_A_TTF_Th.ttf'
+            ]
+        });
+    </script>
+    <!--PCとモバイルの切り替え-->
+    <script>
+        // ウィンドウの幅を取得する関数
+        function getWindowWidth() {
+            return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+        }
+
+        // ページが読み込まれたときに実行される関数
+        function checkWindowSize() {
+            // ウィンドウの幅でリダイレクト
+            if (getWindowWidth() <= 550) {
+                window.location.href = './';
+            }
+        }
+
+        // ウィンドウサイズが変更されたときに実行されるイベント
+        window.onresize = function () {
+            checkWindowSize();
+        };
+
+        // ページが読み込まれたときに初回チェックを行う
+        window.onload = function () {
+            checkWindowSize();
+        };
+    </script>
+    <title>Naamc.net - stats</title>
+</head>
+
+<body>
+    <div class="wrapper hide">
+        <div class="toast">
+            <div class="content">
+                <div class="icon">
+                    <i class="uil uil-wifi-slash"></i>
+                </div>
+                <div class="details">
+                    <span>現在オフライン</span>
+                    <p>インターネット接続が失われました。</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapperon hide">
+        <div class="toaston">
+            <div class="contenton">
+                <div class="iconon">
+                    <i class="uil uil-wifi"></i>
+                </div>
+                <div class="detailson">
+                    <span>現在オンライン</span>
+                    <p>インターネット接続中。情報更新完了</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contents">
+        <div class="line hide">
+            <div>
+                <img class="logo" src="なーさんの日常サーバーステータスロゴ.png">
+            </div>
+            <div>
+            </div>
+        </div>
+        <div class="line">
+            <div class="panel">
+                <h1>Help</h1>
+                <h2>About</h2>
+                <div class="card">
+                    <p>このページではなーさんの日常の公開サーバーと限定サーバーのステータスを確認することができます。</p>
+                </div>
+                <h2>How to use</h2>
+                <div class="card">
+                    <p>横幅が1500px以上のディスプレイで表示すると自動更新が行われます。</p>
+                </div>
+                <h2>License</h2>
+                <div class="card">
+                    <p>製作者:<a href="/url?page=https://choko1229.net">choko1229</a></p>
+                    <p>Minecraft Server Status API,MCheads</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3><a href="help">help</a> &copy;naamc.net - 2024</h3>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="offline-upup.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+    <script src="netwark.js"></script>
+    <script src="upu p.min.js"></script>
+    <script>
+        window.addEventListener('online', () => {
+            location.reload();
+        });
+    </script>
+        <!--PCとモバイルの切り替え-->
+        <script>
+            // ウィンドウの幅を取得する関数
+            function getWindowWidth() {
+                return window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+            }
+    
+            // ページが読み込まれたときに実行される関数
+            function checkWindowSize() {
+                // ウィンドウの幅でリダイレクト
+                if (getWindowWidth() >= 351) {
+                    window.location.href = 'mobile';
+                }
+            }
+    
+            // ウィンドウサイズが変更されたときに実行されるイベント
+            window.onresize = function () {
+                checkWindowSize();
+            };
+    
+            // ページが読み込まれたときに初回チェックを行う
+            window.onload = function () {
+                checkWindowSize();
+            };
+        </script>
+    <title>Naamc.net - OFF LINE</title>
+</head>
+
+<body>
+    <div class="contents">
+        <div class="line">
+            <div class="panel">
+                <div>
+                    <img class="logo" src="なーさんの日常サーバーステータスロゴ.png">
+                </div>
+                <h1>非対応のブラウザ</h1>
+                <p>横幅が350px以下のデバイスでは閲覧することができません。</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>&copy;naamc.net - 2024</h3>
+    </footer>
+</body>
+
+</html>

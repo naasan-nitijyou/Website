@@ -1,0 +1,118 @@
+@media screen and (max-width: 550px) {
+    .logo{
+        display: block;
+        margin: 0px  auto 24px auto;
+    }
+    .card{
+        width: calc(100vw - 64px);
+        height: calc(100vh - 64px);
+        padding: 32px;
+        background-color: #303338;
+    }
+    .stats {
+        position: absolute;
+        width: calc(100% - 64px);
+        top: 220px;
+        margin: 0px;
+    }
+    }
+    
+    @media screen and (min-width: 550px) {
+        .logo{
+            display: none;
+        }
+        .card{
+            position: relative;
+            top: calc(100vh - 50vh - 150px );
+            margin: auto;
+            display: block;
+            border-radius: 5px;
+            width: 480px;
+            padding: 32px;
+            background-color: #303338;
+        }
+        .stats {
+            position: absolute;
+            width: calc(100% - 64px);
+            top: 165px;
+            margin: 0px;
+        }
+    }
+
+body{
+    margin: 0;
+    font-family: "GG Sans";
+}
+
+@font-face {
+    font-family: "GG Sans";
+    src: url(./gg_sans_Normal.ttf);
+}
+@font-face {
+    font-family: "GG Sans Bold";
+    src: url(./gg_sans_Bold.ttf);
+}
+@font-face {
+    font-family: "GG Sans Medium";
+    src: url(./gg_sans_Medium.ttf);
+}
+
+.background{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.card{
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    background-color: #303338;
+}
+.icon {
+    display: block;
+    margin: auto;
+    width: 64px;
+    border-radius: 16px;
+}
+.card p{
+    text-align: center;
+    margin: 0;
+    margin-top: 30px;
+    color: #b5bac1;
+}
+.card h1{
+    position: relative;
+    font-family: "GG Sans Medium";
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    top: -25px;
+    color: #f2f3f5;
+}
+.stats {
+    position: absolute;
+    width: calc(100% - 64px);
+    margin: 0px;
+}
+.online{
+    color: #23a559;
+}
+button{
+    margin-top: 40px ;
+    width: 100%;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5865f2;
+    color: #f2f3f5;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+button:hover{
+    background-color: #3b45bb;
+}

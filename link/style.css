@@ -38,7 +38,7 @@ a {
 
 .topimage {
     width: 100vw;
-    height: 300px;
+    height: 150px;
     background-image: url(./background.jpeg);
     background-size: cover;
     background-position: center;
@@ -52,7 +52,7 @@ a {
 .name {
     text-align: center;
     position: relative;
-    top: 50px;
+    top: 20px;
 }
 
 .contents{
@@ -73,6 +73,7 @@ a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: calc(100vh - 310px);
 }
 
 .card{

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/googleicon.css">
+    <link rel="shortcut icon" href="/file/favicon.png" type="image/x-icon">
+    <script src="./modserverstats.js"></script>
+
+    <title>なーさんの日常|MODサーバー</title>
+</head>
+<style>
+    .online {
+        color: #2694c8;
+    }
+
+    .offline {
+        color: #f4530d;
+    }
+
+    .download {
+        width: 110px;
+    }
+
+    .modname {
+        width: 245px;
+    }
+</style>
+
+<body>
+    <!--PC用のヘッダー-->
+    <header class="header-pc">
+        <div class="line-up">
+            <div class="title">
+                <a href="/">
+                    <p class="titleja">なーさんの日常</p>
+                    <p class="titleeng">naamc.net</p>
+                </a>
+            </div>
+            <div class="line-up list">
+                <li><a class="menu" href="/">ホーム</a></li>
+                <li><a class="menu" href="/discord">Discord</a></li>
+                <li><a class="menu" href="/minecraft/">Minecraft</a></li>
+                <li><a class="menu" href="/link">リンク集</a></li>
+            </div>
+        </div>
+    </header>
+    <!--モバイル用のヘッダー-->
+    <header class="header-mobile">
+        <div class="line-up">
+            <div class="title">
+                <a href="/">
+                    <p class="titleja">なーさんの日常</p>
+                    <p class="titleeng">naamc.net</p>
+                </a>
+            </div>
+            <!-- ハンバーガーメニュー部分 -->
+            <div class="nav">
+
+                <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+                <input id="drawer_input" class="drawer_hidden" type="checkbox">
+
+                <!-- ハンバーガーアイコン -->
+                <label for="drawer_input" class="drawer_open"><span></span></label>
+
+                <!-- メニュー -->
+                <nav class="nav_content">
+                    <ul class="nav_list">
+                        <li><a class="nav_item menu" href="/">ホーム</a></li>
+                        <li><a class="nav_item menu" href="/discord">Discord</a></li>
+                        <li><a class="nav_item menu" href="/minecraft/">Minecraft</a></li>
+                        <li><a class="nav_item menu" href="/link">リンク集</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+
+    <div class="contents">
+        <h2>なーさんの日常 MODサーバー</h2>
+        <p>現在配信中でプレイしているMODサーバーです。</p>
+        <iframe width="500px" height="250px" src="https://www.youtube.com/embed/r4Mp3WCW27Q"
+            title="【マイクラ】ごちゃ混ぜMODで遊ぶ！【参加型】" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <h3>主なMOD</h3>
+        <p>・ワンピースMOD</p>
+        <p>・メカニズム</p>
+        <p>・抜刀剣</p>
+        <p>・黄昏MOD</p>
+        <br>
+        <h3>参加方法</h3>
+        <p>円滑な進行のために<a href="/discord/">Discord</a>への参加をお願いします。</p>
+        <h4>・配信中の場合</h4>
+        <p>YouTubeで配信中の場合はコメント欄で参加したいとコメントをお願いします。</p>
+        <h4>・配信外の場合</h4>
+        <p><a href="/discord/">Discord</a>にて参加したいとなーさん(naokoko)か管理者(choko1229)に伝えてください。</p>
+        <br>
+        <h4 style="font-size: 1.5rem;">サーバーアドレス:indigovps.naamc.net</h4>
+        <br>
+        <h3>サーバーステータス：<div style="display: inline-flex;" id="status"></div>
+        </h3>
+        <br><br>
+        <h3>注意</h3>
+        <p>導入Mod等は下記してください。</p>
+        <p>ここにあるMOD以外の導入はご遠慮ください。</p>
+        <h4>・導入必須MOD</h4>
+        <table border="1">
+            <tr>
+                <th class="modname">MOD名</th>
+                <th>説明</th>
+                <th class="download">ダウンロード</th>
+            </tr>
+            <tr>
+                <td>FML</td>
+                <td>Modローダー</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://files.minecraftforge.net/net/minecraftforge/forge/index_1.16.5.html">forge</a>
+                </td>
+            <tr>
+                <td>Curios API</td>
+                <td>前提MOD(黄昏の森で使用)</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/curios/download/3661903">curseforge</a>
+                </td>
+            <tr>
+                <td>Epic Fight</td>
+                <td>戦闘の拡張MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/epic-fight-mod/download/4029362">curseforge</a>
+                </td>
+            <tr>
+                <td>Farmer's Delight</td>
+                <td>農業MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/farmers-delight/download/3765350">curseforge</a>
+                </td>
+            <tr>
+                <td>Kotlin for Forge</td>
+                <td>前提MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/kotlin-for-forge/download/3675495">curseforge</a>
+                </td>
+            <tr>
+                <td>Mekanism</td>
+                <td>メカニズム(工業MOD)の本体</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/mekanism/download/3659389">curseforge</a>
+                </td>
+            <tr>
+                <td>Mekanism Additions</td>
+                <td>メカニズム(工業MOD)の公式アドオン</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/mekanism-additions/download/3659393">curseforge</a>
+                </td>
+            <tr>
+                <td>Mekanism Generators</td>
+                <td>メカニズム(工業MOD)のエネルギー追加</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/mekanism-generators/download/3659391">curseforge</a>
+                </td>
+            <tr>
+                <td>Mekanism Tools</td>
+                <td>メカニズム(工業MOD)のツール追加</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/mekanism-tools/download/3659392">curseforge</a>
+                </td>
+            <tr>
+                <td>Mine Mine no Mi</td>
+                <td>ワンピースMOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/mine-mine-no-mi/download/4682386">curseforge</a>
+                </td>
+            <tr>
+                <td>Obfuscate</td>
+                <td>Epic Fightの前提MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/obfuscate/download/3740120">curseforge</a>
+                </td>
+            <tr>
+                <td>SlashBlade</td>
+                <td>抜刀剣MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/slashblade/download/3601907">curseforge</a>
+                </td>
+            <tr>
+                <td>Timeless and Classics Guns</td>
+                <td>銃MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/timeless-and-classic-guns-tac/download/5128430">curseforge</a>
+                </td>
+            <tr>
+                <td>The Twilight Forest</td>
+                <td>黄昏の森MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/the-twilight-forest/download/3575220">curseforge</a>
+                </td>
+        </table>
+        <h4>・任意導入MOD</h4>
+        <table border="1">
+            <tr>
+                <th class="modname">MOD名</th>
+                <th>説明</th>
+                <th class="download">ダウンロード</th>
+            </tr>
+            <tr>
+                <td>Inventory Profiles Next</td>
+                <td>インベントリ整理MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/inventory-profiles-next/download/4753602">curseforge</a>
+                </td>
+            <tr>
+                <td>libIPN</td>
+                <td>整理MODの前提MOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/libipn/download/4574569">curseforge</a>
+                </td>
+            <tr>
+                <td>Just Enough Items (JEI)</td>
+                <td>レシピMOD</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/jei/download/4371666">curseforge</a>
+                </td>
+            <tr>
+                <td>AppleSkin</td>
+                <td>食料の詳細ステータスを表示する</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/appleskin/download/4770812">curseforge</a>
+                </td>
+            <tr>
+                <td>Better Advancements</td>
+                <td>実績画面を大きくしてみやすくする</td>
+                <td><a target="_blank" rel="noopener noreferrer"
+                        href="/url?page=https://www.curseforge.com/minecraft/mc-mods/better-advancements/download/3404330">curseforge</a>
+                </td>
+        </table>
+    </div>
+    <!--フッター-->
+    <footer>
+        <div class="line-up">
+            <p class="copyright">&copy; 2023 naamc.net</p>
+            <p class="create hide400"><a class="menu hide400" href="/url?page=https://choko1229.net">create by
+                    choko1229</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -75,6 +75,7 @@ body {
 h1,
 h2,
 h3,
+h4,
 p {
     margin: 0;
 }
@@ -303,6 +304,11 @@ footer {
     border-bottom: 2px solid #ff9000;
 }
 
+.contents h4 {
+    color: #ff9000;
+    display: inline-block;
+}
+
 .contents p {
     color: #000000;
 }
@@ -346,4 +352,23 @@ footer {
 
 html {
     cursor: url(file/customcursor.png),auto;
+}
+
+table{
+    width: 100%;
+    border-color: #000000;
+    border-collapse: collapse;
+    border: solid 2px #ff9000;
+    table-layout: fixed;
+}
+
+table *{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table th {
+    text-align: center;
+    padding: 7px;
 }
